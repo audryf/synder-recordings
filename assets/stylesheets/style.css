@@ -171,21 +171,60 @@ footer {
     color: var(--white-color);
 }
 
+footer ul li {
+    list-style: none;
+    letter-spacing: 1.25px;
+    line-height: 1.75em;
+}
+
 footer ul li a {
     color: var(--white-color);
     text-decoration: none;
 }
 
+hr {
+    height: 0.25px;
+    border: none;
+    background-color: var(--light-grey-color);
+}
+.footer-container {
+    margin: 1em;
+}
+
 .footer-section {
     display: flex;
     flex-direction: row;
+    align-content: stretch;
     justify-content: space-between;
+    margin: 1em;
+}
+
+.footer-section p {
+    padding-right: 1.5em;
+
+}
+.list-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-item {
+    margin-top: 1em;
+    margin-bottom: auto;
+    justify-content: stretch;
 }
 
 .links {
     display: flex;
     justify-content: space-between;
     margin: 1em;
+    font-weight: bold;
+}
+
+.social-logos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1em;
 }
 
 /* UTILITY CLASSES */
@@ -198,7 +237,8 @@ footer ul li a {
     background-color: var(--button-color);
     border: none;
     color: var(--button-dark);
-    padding: 0.75em 4em;
+    padding: 10px 20px;
+    width: 150px;
 }
 
 .icon {
@@ -217,9 +257,9 @@ footer ul li a {
 }
 
 .main-logo {
-    height: 5em;
-    width: 5em;
-    margin: 1rem;
+    height: 6em;
+    width: 6em;
+    padding-top: 0;
 }
 
 /* GRID / FLEXBOX UTILITY CLASSES */
