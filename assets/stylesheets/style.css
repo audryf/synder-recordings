@@ -1,6 +1,19 @@
+/* GLOBAL VARIABLES - COLORS */
+:root {
+    --main-color: #001D5D;
+    --secondary-color: #B8BFCF;
+    --button-color: #D9F0D0;
+    --button-hover-color: #68C242;
+    --black-color: #000000;
+    --grey-color: #525252;
+    --white-color: #FFFFFF;
+    --light-grey-color: #F6F6F6;
+}
 
-
-
+/* MAIN STYLES */
 body {
     font-family: 'Karla', sans-serif; 
 }
+
+/* FLEX UTILITY CLASSES */
+
