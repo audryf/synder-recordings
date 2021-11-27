@@ -3,17 +3,90 @@
     --main-color: #001D5D;
     --secondary-color: #B8BFCF;
     --button-color: #D9F0D0;
-    --button-hover-color: #68C242;
+    --button-dark: #68C242;
     --black-color: #000000;
     --grey-color: #525252;
     --white-color: #FFFFFF;
     --light-grey-color: #F6F6F6;
 }
 
-/* MAIN STYLES */
+/* MAIN */
 body {
     font-family: 'Karla', sans-serif; 
+
+}
+
+/* HEADER */
+.main-logo {
+    height: 5em;
+    width: 5em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    margin: 0 2em;;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    margin: auto;
+}
+
+nav ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+#hero-banner {
+    background-image: url("../images/banner.png");
+    background-size: cover;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+#hero-banner a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+
 }
 
 /* FLEX UTILITY CLASSES */
+.btn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18px;
+    background-color: var(--button-color);
+    border: none;
+    color: var(--button-dark);
+    padding: 0.75em 4em;
+}
 
+.icon {
+    padding: .25em;
+}
+
+.nav-item {
+    padding: 0 1em;
+    font-weight: bold;
+}
