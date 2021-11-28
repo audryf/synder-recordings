@@ -1,9 +1,10 @@
 /* GLOBAL VARIABLES - COLORS */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
 }
 
 :root {
@@ -17,13 +18,17 @@
     --light-grey-color: #F6F6F6;
 }
 
+
 /* MAIN */
+
 body {
-    font-family: 'Karla', sans-serif; 
+    font-family: 'Karla', sans-serif;
     width: 100%;
 }
 
-/* HEADER - NAV */
+
+/* NAV */
+
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -57,6 +62,7 @@ nav ul li a {
     color: var(--main-color);
 }
 
+
 /* HEADER - HERO */
 header {
     background-image: url("../images/banner.png");
@@ -66,6 +72,7 @@ header {
     height: 90vh;
     display: flex;
     flex-direction: column;
+    animation: all 2s ease-in-out;
 }
 
 #hero-banner {
@@ -89,7 +96,9 @@ header {
     line-height: 1.5em;
 }
 
-/* MAIN */
+
+/* ABOUT */
+
 #about-section {
     display: flex;
     flex-direction: row;
@@ -99,6 +108,7 @@ header {
 }
 
 #about-img {
+    
     width: 50%;
     height: 100%;
 }
@@ -106,9 +116,11 @@ header {
 #about-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     width: 50%;
+    height: 100%;
+    margin: 4em;
+    padding: 3em;
 }
 
 .about-item {
@@ -117,12 +129,13 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
     line-height: 1.5em;
-    padding-left: 1em;
 }
 
 #about-text p {
     color: var(--grey-color);
+    padding-bottom: 2.5em;
 }
+
 /* GOOGLE MAPS */
 #map {
     margin: auto;
@@ -131,13 +144,16 @@ header {
     width: 100%;
 }
 
+
 /* NEW RELEASES SECTION */
+
 .carousel {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 4em;
+    background-color: var(--light-grey-color);
 }
 
 #slider-card {
@@ -149,21 +165,90 @@ header {
     height: 100%;
 }
 
+
 /* GET IN TOUCH */
+select, input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    background-color: var(--light-grey-color);
+    color: var(--black-color);
+}
+
+input::placeholder {
+    color: var(--black-color);
+}
+
+textarea {
+    height: 80%;
+}
+
 #get-in-touch {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 #contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 50%;
+    padding: 5em;
 }
 
+#contact-form-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 1.5em;
+    padding-right: 2em;
+    margin-bottom: 1em;
+}
+
+#contact-form-header h2 {
+    margin-bottom: 0.5em;
+}
+
+#contact-form-header p {
+    color: var(--grey-color);
+    margin-right: 7em;
+}
+
+.form-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4);
+    gap: 30px;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.form-first-name {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.form-last-name {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+}
+
+.form-email {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+.form-contact-reason {
+    grid-column: 3 / span 2;
+    grid-row: 2;
+}
+
+.form-message {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 2;
+}
+
+
 /* FOOTER */
+
 footer {
     display: flex;
     flex-direction: column;
@@ -187,6 +272,7 @@ hr {
     border: none;
     background-color: var(--light-grey-color);
 }
+
 .footer-container {
     margin: 1em;
 }
@@ -201,8 +287,8 @@ hr {
 
 .footer-section p {
     padding-right: 1.5em;
-
 }
+
 .list-title {
     text-transform: uppercase;
     font-weight: bold;
@@ -227,7 +313,9 @@ hr {
     margin-left: 1em;
 }
 
+
 /* UTILITY CLASSES */
+
 .btn {
     text-decoration: none;
     font-weight: bold;
@@ -239,6 +327,12 @@ hr {
     color: var(--button-dark);
     padding: 10px 20px;
     width: 150px;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background-color: var(--button-dark);
+    color: var(--white-color);
 }
 
 .icon {
@@ -262,8 +356,15 @@ hr {
     padding-top: 0;
 }
 
+
 /* GRID / FLEXBOX UTILITY CLASSES */
+
 .row {
     display: flex;
-    flex-direction: row;
+}
+
+.col {
+    flex: 1;
+    height: 100%;
+    min-height: 100%;
 }
