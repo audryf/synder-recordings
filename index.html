@@ -12,9 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/stylesheets/style.css">
     <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
     <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
 
     <title>Synder Recordings</title>
 </head>
@@ -78,30 +79,61 @@
             </div>
         </section>
         <!-- New Releases section -->
-        <section class="carousel">
-            <h2 class="section-header">New Releases</h2>
-            <p>
+        <section id="new-releases">
+            <h2 id="new-releases-title" class="section-header">New Releases</h2>
+            <p id="new-releases-sub">
                 New albums every single month, check out the newest & best from Synder Recording artist, now available
                 on Apple Music & Spotify.
             </p>
-            <div class="slick" id="slider-card">
-                <div>
-                    <img 
-                        src="./assets/images/album.png"
-                        alt="red and black album cover with Brent Faiyaz looking off to the side, the album title 'Trapsoul' centered" />
-                    <h3>Trapsoul</h3>
-                    <p>Brent Faiyaz</p>
-                    <p>Brent Faiyaz is an American singer and songwriter. Born in Columbia, Maryland, he started his career in 2014 releasing his first songs to SoundCloud.</p>
+            <div id="slider-cards" class="slick">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="./assets/images/album.png"
+                            alt="red and black album cover with Brent Faiyaz looking off to the side, the album title 'Trapsoul' centered" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Trapsoul</h3>
+                            <p class="card-sub">Brent Faiyaz</p>
+                            <p class="card-text">Brent Faiyaz is an American singer and songwriter. Born in Columbia,
+                                Maryland, he started his career in 2014 releasing his first songs to SoundCloud.</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img 
-                        src="./assets/images/album.png"
-                        alt="red and black album cover with Brent Faiyaz looking off to the side, the album title 'Trapsoul' centered" />
-                    <h3>Trapsoul</h3>
-                    <p>Brent Faiyaz</p>
-                    <p>Brent Faiyaz is an American singer and songwriter. Born in Columbia, Maryland, he started his career in 2014 releasing his first songs to SoundCloud.</p>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="./assets/images/album.png"
+                            alt="red and black album cover with Brent Faiyaz looking off to the side, the album title 'Trapsoul' centered" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Trapsoul</h3>
+                            <p class="card-sub">Brent Faiyaz</p>
+                            <p class="card-text">Brent Faiyaz is an American singer and songwriter. Born in Columbia,
+                                Maryland, he started his
+                                career in 2014 releasing his first songs to SoundCloud.</p>
+                        </div>
+                    </div>
                 </div>
-              
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="./assets/images/album.png"
+                            alt="red and black album cover with Brent Faiyaz looking off to the side, the album title 'Trapsoul' centered" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Trapsoul</h3>
+                            <p class="card-sub">Brent Faiyaz</p>
+                            <p class="card-text">Brent Faiyaz is an American singer and songwriter. Born in Columbia,
+                                Maryland, he started his
+                                career in 2014 releasing his first songs to SoundCloud.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-controllers">
+                <img src="./assets/icons/SVGs/left_controller.svg" alt="left controller for new release slides" />
+                <img src="./assets/icons/SVGs/right_controller.svg" alt="right controller for new release slides" />
             </div>
         </section>
         <!-- <section id="map"> -->
@@ -235,7 +267,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/slick.js"></script>
     <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>
