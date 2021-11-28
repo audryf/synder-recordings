@@ -66,22 +66,34 @@ nav ul li a {
 /* HEADER - HERO */
 header {
     background-image: url("../images/banner.png");
+    background-repeat: repeat;
     background-size: cover;
     color: var(--white-color);
     text-decoration: none;
     height: 90vh;
     display: flex;
     flex-direction: column;
-    animation: all 2s ease-in-out;
+    animation: grow 6s ease-in-out infinite alternate;
+}
+
+@keyframes grow {
+    from {
+        background-size: 100%;
+    } to {
+        background-size: 125%;
+    } 
 }
 
 #hero-banner {
-    margin-top: 5em;
+    margin-top: 15em;
+    margin-left: 8em;
+    margin-right: 65em;
 }
 
 #hero-banner h1 {
     font-size: 65px;
     letter-spacing: 0.73;
+    margin-bottom: 0.25em;
 }
 
 #hero-banner a {
@@ -94,9 +106,12 @@ header {
 
 #hero-banner p {
     line-height: 1.5em;
+    margin-bottom: 2em;
 }
 
-
+#play-button {
+    margin-right: 1em;
+}
 /* ABOUT */
 
 #about-section {
@@ -146,14 +161,14 @@ header {
 
 
 /* NEW RELEASES SECTION */
-
 .carousel {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 4em;
+    margin: 4em 0;
     background-color: var(--light-grey-color);
+    width: 100%;
 }
 
 #slider-card {
