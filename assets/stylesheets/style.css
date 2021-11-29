@@ -521,10 +521,6 @@ hr {
 }
 
 @media only screen and (max-width: 425px) {
-    #hero-banner p {
-        height: ;
-    }
-
     #about-section {
         margin: 0;
     }
