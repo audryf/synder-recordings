@@ -75,6 +75,8 @@ header {
     display: flex;
     flex-direction: column;
     animation: grow 6s ease-in-out infinite alternate;
+    display: flex;
+    justify-content: center;
 }
 
 @keyframes grow {
@@ -88,9 +90,11 @@ header {
 }
 
 #hero-banner {
-    margin-top: 15em;
-    margin-left: 8em;
-    margin-right: 65em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 4em;
 }
 
 #hero-banner h1 {
